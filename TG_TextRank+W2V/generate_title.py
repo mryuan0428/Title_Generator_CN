@@ -1,5 +1,7 @@
 #-*- encoding:utf-8 -*-
-
+''' USED sgns.sogou.word 
+https://github.com/Embedding/Chinese-Word-Vectors
+'''
 import os, sys
 import json
 import numpy as np
