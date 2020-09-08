@@ -8,6 +8,7 @@ title_vec_path = sys.path[0] + "/title_vec.npy"
 
 bc = BertClient()
 
+#-----------Title2Vec-----------
 cnt = 0
 title_vec = []
 for line in open(title_path,"r",encoding="utf-8"):
