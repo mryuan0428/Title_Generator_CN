@@ -1,4 +1,5 @@
 #! -*- coding: utf-8 -*-
+# Corpus: 新闻语料json版(news2016zh)
 import sys
 import copy
 import numpy as np
