@@ -26,7 +26,7 @@ for line in open(title_path,"r",encoding="utf-8"):
     
 title_vec = np.array(title_vec)
 np.save(title_vec_path, title_vec)
-'''
+
 #-----------Title_bilstm2Vec-----------
 cnt = 0
 title_vec = []
@@ -65,4 +65,16 @@ for line in open(title_trw2v_path,"r",encoding="utf-8"):
     
 title_vec = np.array(title_vec)
 np.save(title_trw2v_vec_path, title_vec)
-
+'''
+#-----------Title_UniLM2Vec-----------
+cnt = 0
+title_vec = []
+for line in open(title_unilm_path,"r",encoding="utf-8"):
+    a = bc.encode([line.rstrip('\n')])
+    title_vec.append(a)
+    cnt += 1
+    if cnt % 100 == 0:
+        print(f'{cnt} titles have been encoded.')
+    
+title_vec = np.array(title_vec)
+np.save(title_unilm_vec_path, title_vec)
