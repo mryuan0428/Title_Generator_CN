@@ -1,5 +1,5 @@
 #! -*- coding: utf-8 -*-
-
+#Corpus: [THUCNews数据集](http://thuctc.thunlp.org/)
 from __future__ import print_function
 
 import glob
