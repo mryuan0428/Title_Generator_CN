@@ -15,7 +15,7 @@ title_trw2v_vec_path = sys.path[0] + "/title_trw2v_vec.npy"
 title_unilm_vec_path = sys.path[0] + "/title_unilm_vec.npy"
 
 bc = BertClient()
-'''
+
 #-----------Title2Vec-----------
 cnt = 0
 title_vec = []
@@ -67,7 +67,7 @@ for line in open(title_trw2v_path,"r",encoding="utf-8"):
     
 title_vec = np.array(title_vec)
 np.save(title_trw2v_vec_path, title_vec)
-'''
+
 #-----------Title_UniLM2Vec-----------
 cnt = 0
 title_vec = []
