@@ -1,5 +1,10 @@
 #-*- encoding:utf-8 -*-
-
+'''
+sim_bilstm: 93.5311353301591%
+sim_textrank: 93.66629714960351%
+sim_trw2v: 93.92663687443734%
+sim_unilm: 95.65124754779288%
+'''
 import os, sys
 import numpy as np
 import threading
@@ -86,10 +91,3 @@ if __name__ == "__main__":
     print(f"sim_textrank: {sim_textrank}%")
     print(f"sim_trw2v: {sim_trw2v}%")
     print(f"sim_unilm: {sim_unilm}%")
-    
-    '''
-    sim_bilstm: 93.5311353301591%
-    sim_textrank: 93.66629714960351%
-    sim_trw2v: 93.92663687443734%
-    sim_unilm: 95.65124754779288%
-    '''
