@@ -89,10 +89,10 @@ if __name__ == '__main__':
     title_unilm_path = '/'.join(sys.path[0].split('/')[0:-1]) + '/validation/title_unilm.txt'
 
     autotitle = AutoTitle(start_id=None, end_id=tokenizer._token_end_id, maxlen=32) #标题最长32
-    
+
+    #'''
     cnt = 0
     title = []
-
     for line in open(content_path,"r",encoding="utf-8"):
         title_gen = autotitle.generate(line)
         title.append(title_gen)
